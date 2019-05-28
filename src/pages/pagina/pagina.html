@@ -1,0 +1,67 @@
+
+<ion-header>
+  <ion-navbar>
+    
+    <ion-title align="center" *ngIf= "tag != ''">{{nomePagina}} - #{{tag}}</ion-title>
+    <ion-title align="center" *ngIf= "tag == ''">{{nomePagina}}</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-item no-padding *ngFor="let elemento of conteudo; let i = index" no-lines class="geral">
+		<ion-item *ngIf="tipo[i] == 'imagem'" no-lines>
+			<img [src]="elemento" class="imagem">
+		</ion-item>
+		<ion-item  *ngIf="tipo[i] == 'link'" no-lines class="link">
+			<p text-wrap="none" id="link">{{elemento}}</p>
+		</ion-item>
+		<ion-item  *ngIf="tipo[i] == 'texto'" no-lines class="texto">
+			<ion-textarea rows=3 id="texto"></ion-textarea>
+		</ion-item>
+		<ion-item  *ngIf="tipo[i] == 'video'" no-lines>
+			<img [src]="elemento" class="imagem">
+		</ion-item>
+		<ion-item  *ngIf="tipo[i] == 'audio'" no-lines>
+			<img [src]="elemento" class="imagem">
+		</ion-item> 
+	</ion-item>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+  	<ion-list no-padding align="center">
+  		<ion-row no-padding align="center">
+  			<ion-col (click)="inserirImagem('assets/imgs/celula.jpg')">
+  				<ion-icon color="menstruacaoForte" name="photos" ></ion-icon>
+  			</ion-col>
+  			<ion-col>
+  				<ion-icon color="menstruacaoForte" name="videocam" (click)="inserirVideo('assets/imgs/video.jpg')"></ion-icon>
+  			</ion-col>
+  			<ion-col>
+  				<ion-icon color="menstruacaoForte" name="headset" (click)="inserirAudio('assets/imgs/audio.png')"></ion-icon>
+  			</ion-col>
+
+  			<ion-col>
+  				<ion-icon color="azul" name="link" (click)="inserirLink('https://www.biologiatotal.com.br/')"></ion-icon>
+  			</ion-col>
+  			<ion-col>
+  				<ion-icon color="rosa" name="text" (click)="inserirTexto()"></ion-icon>
+  			</ion-col>
+  			
+  			<ion-col>
+  				<ion-icon color="verde" name="pricetags" (click)="inserirTag()"></ion-icon>
+  			</ion-col>
+  			
+  			
+  			<ion-col>
+  				<ion-icon color="verde" name="share" (click)="compartilhar()"></ion-icon>
+  			</ion-col>
+  			<ion-col>
+  				<ion-icon color="dark"  name="checkbox-outline" (click)="salvar()"></ion-icon>
+  			</ion-col>
+  		</ion-row>
+  	</ion-list>
+  </ion-toolbar>
+</ion-footer>

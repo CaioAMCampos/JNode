@@ -1,0 +1,47 @@
+page-caderno {
+	
+	.fundex{
+		background-image: url("../../assets/imgs/bg.jpg");
+	}
+	#texto{
+		color: #000;
+		font-family: Calibri;
+	}
+	#entrada{
+		background-color:#fff;
+		color: #000;
+		font-family: Calibri;
+		border-color: #fff;
+		border-radius: 10px;
+	}
+	#botao{
+		border-radius: 5px;
+		position: relative;
+		display: block;
+		margin-top: 20%;
+	}
+	#sad{
+		text-align: center;
+		display: flex;
+		$border: 3px;
+		background: #FFF;
+		background-clip: padding-box; /* !importanté */
+		border: solid $border transparent; /* !importanté */
+		border-radius: 0.1;
+
+		&:before {
+			content: '';
+		    position: absolute;
+		    top: 0; right: 0; bottom: 0; left: 0;
+		    z-index: -1;
+		    margin: -$border; /* !importanté */
+		    border-radius: inherit; /* !importanté */
+		    background: linear-gradient(to right, #33ccff, #cc0066);
+		}
+	}
+	.principal{
+		position: relative;
+		display: block;
+		margin-top: 25%;
+	}
+}

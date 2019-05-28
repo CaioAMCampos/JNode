@@ -1,0 +1,62 @@
+page-home {
+	ion-content{
+		background-image: url("../../assets/imgs/bgCaderno.jpg");
+		background-repeat: repeat-y;
+		background-size: 100% 100%;
+	}
+	#itemAcordion1{
+		position: relative;
+		margin-left: 5%;
+		background-image: url("../../assets/imgs/materiaFundo.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	#itemAcordion2{
+		position: relative;
+		margin-left: 5%;
+		background-image: url("../../assets/imgs/materiaFundo1.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	#itemAcordion3{
+		position: relative;
+		margin-left: 5%;
+		background-image: url("../../assets/imgs/materiaFundo2.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	#itemAcordion4{
+		position: relative;
+		margin-left: 5%;
+		background-image: url("../../assets/imgs/materiaFundo3.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.margem1{
+		position: relative;
+		margin-left: 5%;
+		background-color: #F5BCA9;
+	}
+	.margem2{
+		position: relative;
+		margin-left: 5%;
+		background-color: #cef6f5;
+	}
+	.margem3{
+		position: relative;
+		margin-left: 5%;
+		background-color: #F5F6CE;
+	}
+	.margem4{
+		position: relative;
+		margin-left: 5%;
+		background-color: #D8F6CE;
+	}
+	.botaoPadrao{
+		position: relative;
+		margin-left: 5%;
+	}
+	.p{
+		color: #000;
+	}
+}

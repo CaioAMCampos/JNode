@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title align="center">
+      CAIO AUGUSTO    
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding> 
+
+  <ion-list>
+    <div no-padding *ngFor="let caderno of cadernos; let i = index">
+      <ion-item *ngIf="i%4 == 1"  no-lines  id="itemAcordion1" >
+          <h2 text-wrap ="detail-none" (click)="teste(i)" class="margem1">{{caderno.titulo}}</h2> 
+          <p  text-wrap ="detail-none" (click)="teste(i)" class ="margem1 p">{{caderno.descricao}}</p>
+          <button ion-button icon-left color="menstruacaoRala"*ngIf="caderno.aberto == true" (click)="pushPesquisa(i)" class="botaoPadrao"> <ion-icon name="search"></ion-icon>Pesquisar</button>
+          <button ion-button icon-left color="menstruacaoRala"  *ngIf="caderno.aberto == true" (click)="pushPagina()"> <ion-icon name="qr-scanner" class="botaoPadrao"></ion-icon>Scanear</button> 
+      </ion-item>
+      <ion-item *ngIf="i%4 == 2"  no-lines  id="itemAcordion2" >
+          <h2 text-wrap ="detail-none" (click)="teste(i)" class="margem2">{{caderno.titulo}}</h2> 
+          <p t text-wrap ="detail-none" (click)="teste(i)" class ="margem2 p">{{caderno.descricao}}</p>
+          <button ion-button icon-left color="coroteTutiFrutti" *ngIf="caderno.aberto == true" (click)="pushPesquisa(i)" class="botaoPadrao"> <ion-icon name="search"></ion-icon>Pesquisar</button>
+          <button ion-button icon-left  color="coroteTutiFrutti" *ngIf="caderno.aberto == true" (click)="pushPagina()"> <ion-icon name="qr-scanner" class="botaoPadrao"></ion-icon>Scanear</button>    
+      </ion-item>
+      <ion-item *ngIf="i%4 == 3"  no-lines  id="itemAcordion3" >
+          <h2 text-wrap ="detail-none" (click)="teste(i)" class="margem3">{{caderno.titulo}}</h2> 
+          <p  text-wrap ="detail-none" (click)="teste(i)" class ="margem3 p">{{caderno.descricao}}</p>
+          <button ion-button icon-left color="mijo" *ngIf="caderno.aberto == true" (click)="pushPesquisa(i)" class="botaoPadrao"> <ion-icon name="search"></ion-icon>Pesquisar</button>
+          <button ion-button icon-left  color="mijo" *ngIf="caderno.aberto == true" (click)="pushPagina()"> <ion-icon name="qr-scanner" class="botaoPadrao"></ion-icon>Scanear</button>    
+      </ion-item>
+      <ion-item *ngIf="i%4 == 0"  no-lines  id="itemAcordion4" >
+          <h2 text-wrap ="detail-none" (click)="teste(i)" class="margem4">{{caderno.titulo}}</h2> 
+          <p  text-wrap ="detail-none" (click)="teste(i)" class ="margem4 p">{{caderno.descricao}}</p>
+          <button ion-button icon-left  color="coroteMenta" *ngIf="caderno.aberto == true" (click)="pushPesquisa(i)" class="botaoPadrao"> <ion-icon name="search"></ion-icon>Pesquisar</button>
+          <button ion-button icon-left  color="coroteMenta" *ngIf="caderno.aberto == true" (click)="pushPagina()"> <ion-icon name="qr-scanner" class="botaoPadrao"></ion-icon>Scanear</button>    
+      </ion-item>
+    </div> 
+  </ion-list>
+  
+</ion-content>
+<ion-footer>
+    <ion-toolbar>
+      <button ion-button block  color ="azul" (click)="adicionar()"> <ion-icon name="add"></ion-icon>Adicionar</button>
+    </ion-toolbar> 
+</ion-footer>

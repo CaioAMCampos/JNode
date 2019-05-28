@@ -1,0 +1,9 @@
+
+<ion-content padding padding [class.qrscan-transparent]="status.showing">
+    <div padding class="intro">
+        <h1>Scaneie o QR-Code de seu caderno</h1>
+        <h6 >Aperte o botão para abrir a câmera depois scaneie o código</h6>
+        <button ion-button block (click)="showQRScanner()" *ngIf="mostrando == false">Abrir Câmera</button>
+        <button ion-button block (click)="scanQRCode()" *ngIf="mostrando == true">Escanear QR-Code</button>
+        </div>
+</ion-content>

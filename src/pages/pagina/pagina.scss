@@ -1,0 +1,43 @@
+page-pagina {
+	.geral{
+		position: relative;
+		display: block;
+		margin-left: 5%;
+		width:100%;
+	}
+	ion-content{
+		background-image: url("../../assets/imgs/fundoFolha.png");
+		background-size: 100%, 100%;
+		background-repeat: repeat-y;
+	}
+	.texto{
+		
+		background-image: url("../../assets/imgs/materialFundo.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.link{
+		background-image: url("../../assets/imgs/materialFundo2.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.imagem{
+		border-radius: 10px;
+		box-shadow: 2px 2px #660000;
+	}
+	#texto{
+		position: relative;
+		display: block;
+		margin-top: -2%;
+		margin-left: 5%;
+		
+	}
+	#link{
+		position: relative;
+		display: block;
+		color: #5882FA;
+		margin-top: -2%;
+		margin-left: 5%;
+	}
+
+}

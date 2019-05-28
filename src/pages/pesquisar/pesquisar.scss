@@ -1,0 +1,17 @@
+page-pesquisar {
+	ion-content{
+		background-image: url('../../assets/imgs/bg_pesquisa.png');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	.items{
+		background-image: url('../../assets/imgs/materiaFundo.png');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.texto{
+		display: block;
+		position: relative;
+		margin-left: 5%;
+	}
+}

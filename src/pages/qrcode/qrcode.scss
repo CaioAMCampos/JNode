@@ -1,0 +1,41 @@
+page-qrcode {
+    #conten{
+        background-image: url('../../assets/imgs/kardappWP.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+    .intro {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-top: 50%;
+    }
+    #botaoPedir {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        top: 100%;
+        margin-top: 40%;
+    }
+    #textoFooter {
+        text-align: center;
+        font-size: 0.8em;
+    }
+    ion-toolbar {
+        border-style: groove;
+        border-width: 2px 0px 0px 0px;
+    }
+    #imgFooter {
+        width: 40px;
+        height: 40px;
+    }
+    .transparent-zone {
+        width: 100%;
+        min-height: 200px;
+        background-color: transparent !important;
+    }
+}
+.qrscan-transparent {
+    background-color: transparent !important;
+}
